@@ -1,0 +1,200 @@
+*{
+    text-decoration: none;
+    margin: 0px;
+    padding: 0px;
+}
+
+body{
+    background-color: rgb(255, 255, 255);
+    margin: 0px;
+    padding: 0px;
+    
+}
+
+nav {
+    background: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+nav .mainMenu {
+    display: flex;
+    list-style: none;
+}
+nav .mainMenu li a {
+    font-weight: bold;
+    display: inline-block;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    padding: 8px 30px;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: rgb(0, 0, 0);
+    font-size:22px;
+    transition: 0.2s ease;
+}
+nav .mainMenu li a:hover {
+    color: blue;
+}
+nav .openMenu {
+    font-size: 2rem;
+    margin: 20px;
+    display: none;
+    cursor: pointer;
+}
+nav .logo {
+    height:60px;
+    margin: 6px;
+    cursor: pointer;
+}
+
+nav .logo .logo-image{
+    height: 50pt;
+    width: auto;
+    margin-left: 30px;
+
+}
+
+nav .mainMenu .closeMenu
+{
+    font-size: 2rem;
+    display: none;
+    cursor: pointer;
+}
+
+ul li a.button-vol1 span{
+    background: black;
+    border-radius: 30px;
+    color: white;
+    padding: 8px 30px;
+}
+
+ul li a.button-vol1 span:hover{
+    background: rgb(182, 182, 182);
+    border-radius: 30px;
+    color: white;
+    padding: 8px 30px;
+}
+
+#home{
+    margin: auto;
+    display: flex;
+    margin-top: 8%;
+    height:600px;
+    float:left;
+    width: 600px;
+    position: relative;
+}
+
+.container-content{
+    margin-top: 15%;
+    float: right;
+    margin-right: 16%;
+}
+
+.container-content .text-content{
+    font-size: 40px;
+    font-weight: normal;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+h2{
+    font-size: 50px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    width: 100%;
+    line-height: 50px;
+}
+
+.p{
+    margin-top: 30px;
+    cursor: pointer;
+}
+
+
+.button-vol2{
+    color: white;
+    font-size: 30px;
+    font-weight: bold;
+    background: black;
+    padding: 8px 40px;
+    border-radius: 30px;
+}
+
+.button-vol2:hover{
+    color: white;
+    font-size: 30px;
+    font-weight: bold;
+    background: rgb(139, 139, 139);
+    padding: 8px 40px;
+    border-radius: 30px;
+}
+
+
+
+@media (max-width: 768px) and (max-width: 2048px){
+    nav .mainMenu {
+      height: 100vh;
+      position: fixed;
+      top: 0px;
+      right: 0px;
+      left: 0px;
+      z-index: 10;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      background: rgb(255, 255, 255);
+      transition: top 1s ease 0s;
+      display: none;
+    }
+    nav .mainMenu .closeMenu {
+      display: block;
+      position: absolute;
+      top: 20px;
+      right: 20px;
+    }
+    nav .openMenu {
+      display: block;
+    }
+    nav .mainMenu li a:hover {
+      background: none;
+      color: rgb(15, 15, 255);
+    }
+
+    #home{
+        margin: auto;
+        display: flex;
+        margin-top: 8%;
+        height:600px;
+        float:left;
+        width: 600px;
+        position: relative;
+    }
+    
+
+    .wrapper-content{
+        width: 85%;
+        margin: auto;
+        position: relative;
+    }
+
+    .wrapper-content-vol2{
+        width: 85%;
+        margin: auto;
+        position: relative;
+    }
+
+    .logo img{
+        height:50pt;
+        width: auto;
+        float: left;
+        margin-top: 40px;
+    }
+
+    .container-content{
+        margin-top: 15%;
+        float: right;
+        margin-right: 16%;
+    }
+}
+
